@@ -1,5 +1,10 @@
 # -*- coding: utf-8 -*-
 
+
+"""
+    Autor: Maria Fernanda Souza Andrade
+"""
+
 from time import sleep
 
 
