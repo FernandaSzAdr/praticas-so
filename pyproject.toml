@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "pratica_geren_process"
+name = "pratica_geren"
 version = "0.1.0"
 description = "Atividades praticas realizadas na disciplina de SO"
 authors = ["FernandaSzAdr <fsandrade25@gmail.com>"]
