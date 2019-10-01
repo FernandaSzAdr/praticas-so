@@ -22,7 +22,7 @@ class Processo:
               '******'.format(self.size))
         print('******'
               ' {} espaços disponiveis na memória! '
-              '******'.format(self.memoria.espaco_livre()))
+              '******'.format(self.memoria.espaco_livre))
 
         sleep(2)
         print(self.mensagem)
@@ -35,10 +35,12 @@ class Processo:
         if self.espaco:
             print('Processo {} será executado!'.format(self.id))
             self.process_run()
+            return True
         else:
             print('Não foi possível alocar o processo {}. '
                   'Não tem espaço disponível'.format(self.id))
             print('\n')
+            return False
 
     def stop(self):
         if self.memoria.desaloca_espaco(self.espaco):

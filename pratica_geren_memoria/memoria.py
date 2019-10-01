@@ -8,6 +8,7 @@ class Memoria:
     def __init__(self, size):
         self.bitmap = np.zeros((size))
 
+    @property
     def espaco_livre(self):
         return len(np.where(self.bitmap == 0)[0])
 

@@ -32,8 +32,8 @@ if __name__ == '__main__':
         if random.choice(choices) == 'run':
             processo = random.choice(processos)
             if processo not in running:
-                processo.run()
-                running.append(processo)
+                if processo.run():
+                    running.append(processo)
         elif random.choice(choices) == 'stop':
             processo = random.choice(processos)
             if processo in running:
